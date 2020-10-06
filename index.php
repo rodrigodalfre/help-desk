@@ -32,14 +32,26 @@
               Login
             </div>
             <div class="card-body">
-              <form>
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="E-mail">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control" placeholder="Senha">
-                </div>
-                <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
+
+              <!-- Metódo post. É necessário criar um action para validação -->   
+              <form action="valida_login.php" method="post">
+						<div class="form-group">
+							<input name="email" type="email" class="form-control" placeholder="E-mail">
+						</div>
+						<div class="form-group">
+							<input name="senha" type="password" class="form-control" placeholder="Senha">
+						</div>
+
+
+						<!-- Condição se acaso houver erro no login -->
+						<?php if(isset($_GET['login']) && $_GET['login'] == 'erro') { ?> 
+						
+							<span class="text-danger">Usuário ou senha inválidos</span>
+
+						<?php } ?>
+
+
+               	<button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
             </div>
           </div>

@@ -43,18 +43,18 @@
 						</div>
 
 
-						<!-- Condição se acaso houver erro no login -->
-						<?php if(isset($_GET['login']) && $_GET['login'] == 'erro') { ?> 
-						
-							<span class="text-danger">Usuário ou senha inválidos</span>
+                  <!-- Condição se acaso houver erro no login -->
+                  <?php if(isset($_GET['login']) && $_GET['login'] == 'erro') { ?> 
+                  
+                    <span class="text-danger">Usuário ou senha inválidos</span>
 
-						<?php } ?>
+                  <?php } ?>
 
-						<?php if(isset($_GET['login']) && $_GET['login'] == 'erro2') { ?> 
-						
-							<span class="text-danger">Faça o login antes de acessar as páginas protegidas</span>
+                  <?php if(isset($_GET['login']) && $_GET['login'] == 'erro2') { ?> 
+                  
+                    <span class="text-danger">Faça o login antes de acessar as páginas protegidas</span>
 
-						<?php } ?>
+                  <?php } ?>
 
 
                	<button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>

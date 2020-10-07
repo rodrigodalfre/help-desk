@@ -15,6 +15,12 @@
         width: 100%;
         margin: 0 auto;
       }
+
+      .sair {
+        border-bottom: 2px solid #FFFFFF;
+        padding: 4px;
+        font-size: 22px;
+      }
     </style>
   </head>
 
@@ -25,6 +31,11 @@
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="logoff.php" class="nav-link sair text-white">SAIR</a>
+        </li>
+      </ul>
     </nav>
 
     <div class="container">    
